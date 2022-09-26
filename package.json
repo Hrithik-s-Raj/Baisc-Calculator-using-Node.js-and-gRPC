@@ -1,0 +1,21 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "greet:pb:win:gen": "powershell -ExecutionPolicy unrestricted ./scripts/gen.ps1  calculator",
+    "calculator:server": "node  calculator/server/index.js",
+    "calculator:client":"node calculator/client/index.js"
+  },
+  "author": "Hrithik.s.raj",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.7.1",
+    "google-protobuf": "^3.21.0"
+  },
+  "devDependencies": {
+    "grpc-tools": "^1.11.2"
+  }
+}
